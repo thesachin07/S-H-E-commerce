@@ -17,12 +17,9 @@ const Navbar = () => {
         .select(`
           id,
           name,
-          subcategories (
-            id,
-            name
-          )
+          subcategories ( id, name )
         `)
-        .limit(5);
+        .limit(4);
 
       if (error) {
         console.error(error);

@@ -1,5 +1,4 @@
 import { supabase } from "@/lib/supabaseClient";
-import Navbar from "@/components/Navbar";
 import ProductCard from "@/components/ProductCard";
  import Link from 'next/link'; 
 export default async function CategoryPage(props) {
@@ -24,7 +23,6 @@ export default async function CategoryPage(props) {
 
   return (
   <div className="bg-white min-h-screen">
-      <Navbar />
     <div className="container mx-auto pl-8 pr-8 ">
       {/* <h1 className="text-4xl font-bold uppercase mb-8 border-b pb-4">
         {category} Collection
