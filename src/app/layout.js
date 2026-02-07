@@ -25,8 +25,10 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <CartProvider>
-         <Navbar />
-            {children}
+         <Navbar/>
+            <main className="pt-15 mt-1">
+    {children}
+  </main>
         </CartProvider>
       </body>
     </html>
