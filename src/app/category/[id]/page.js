@@ -74,7 +74,7 @@ const SubcategoryDisplay = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-blue-50 to-pink-50 py-12 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
+        {/* <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             Subcategories
           </h1>
@@ -82,7 +82,7 @@ const SubcategoryDisplay = () => {
             Category ID: <span className="font-semibold text-purple-600">{categoryId}</span>
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-purple-500 to-blue-500 mx-auto mt-4 rounded-full"></div>
-        </div>
+        </div> */}
 
         {subcategories.length === 0 ? (
           <div className="text-center py-20">
@@ -91,7 +91,7 @@ const SubcategoryDisplay = () => {
             <p className="text-gray-500">There are no subcategories for this category yet.</p>
           </div>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {subcategories.map((subcategory) => (
               <div
                 key={subcategory.id}

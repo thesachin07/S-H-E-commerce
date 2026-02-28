@@ -146,8 +146,6 @@ const Navbar = () => {
               </li>
             ))}
           </ul>
-
-          {/* Optional: Could add icons here again if you want them inside menu */}
         </div>
       )}
     </nav>
